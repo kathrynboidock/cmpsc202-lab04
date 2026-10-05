@@ -9,28 +9,29 @@ This lab reviews the foundational concepts of algorithms and data structures tha
 ## Asymptotic Analysis
 
 1. Use the rules from lecture 07 to prove that $T(n) = 5 \log n + 7n$ is $\mathcal{O}(n)$.
+Using the dropping constants and summing is a max rule, if we compare log n and n, n (linear time) grows faster than log n(logarithmic time).
 
 2. True/False/Possibly: $T(n)$ is $\mathcal{O}(n^2)$?
 
-**Answer**: Yes
+**Answer**: Yes, because if you use the polynomial degree grows faster we can justify that n^2 is an upper bound on n which indicates that O(n^2) can an upper bound on T(n).
 
 **Justification**:
 
 3. True/False/Possibly: $T(n)$ is $\Omega(n \log n)$?
 
-**Answer**: No
+**Answer**: No, because the lower bound cannot be greater than the given upper bound of O(n).
 
 **Justification**:
 
 4. For any algorithm, we can give a trivial lower bound. What is that lower bound?
 
-**Answer**: $\Omega(1)$
+**Answer**: $\Omega(1)$, as any given function will at the very least run $\Omega(1)$.
 
 **Justification**:
 
 5. Is there a corresponding trivial upper bound? Why or why not?
 
-**Answer**: No
+**Answer**: No, as there is no upper can on functions, running time can grow exponentially.
 
 **Justification**:
 
@@ -109,6 +110,7 @@ for i = 1 to N do
 ```
 
 Write a closed-form expression for the number of times `do_work()` is called in terms of $N$.
+do_work() will be called N^2 times.
 
 2. Analyze the exact number of times the `do_work()` function is called in the following pseudocode, assuming $N \ge 1$.
 
@@ -121,8 +123,9 @@ while i > 0:
 ```
 
 If $N=16$, how many times is `do_work()` called?
+log(n)
 
-**Answer**: 31
+**Answer**: 31, if we go though each iteration, the do_work will be called 16 times, then 8 times, then 4 times, then 2 times, then one last time before the iteration kicks out of the while loop.
 
 **Justification**:
 

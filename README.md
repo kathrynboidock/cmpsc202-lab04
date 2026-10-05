@@ -110,7 +110,7 @@ for i = 1 to N do
 ```
 
 Write a closed-form expression for the number of times `do_work()` is called in terms of $N$.
-do_work() will be called N^2 times.
+do_work() will be called in the sequence of N + (N - 1) + (N - 2) + --- + 1
 
 2. Analyze the exact number of times the `do_work()` function is called in the following pseudocode, assuming $N \ge 1$.
 

@@ -125,9 +125,9 @@ while i > 0:
 If $N=16$, how many times is `do_work()` called?
 log(n)
 
-**Answer**: 31, if we go though each iteration, the do_work will be called 16 times, then 8 times, then 4 times, then 2 times, then one last time before the iteration kicks out of the while loop.
+**Answer**: 31
 
-**Justification**:
+**Justification**: If we go though each iteration, the do_work will be called 16 times, then 8 times, then 4 times, then 2 times, then one last time before the iteration kicks out of the while loop.
 
 ## Greedy Algorithms
 
